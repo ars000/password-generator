@@ -1,0 +1,30 @@
+$color-accent: #fca30c;
+$color-accent-hover: #e89200;
+$color-accent-text: #1a1200;
+$color-bg: #f4f4f5;
+$color-surface: #ffffff;
+$color-text: #18181b;
+$color-muted: #71717a;
+$color-border: #e4e4e7;
+$color-danger: #dc2626;
+$color-strength-weak: #ef4444;
+$color-strength-fair: #f97316;
+$color-strength-good: #84cc16;
+$color-strength-strong: #16a34a;
+$radius: 12px;
+$radius-sm: 8px;
+$shadow: 0 4px 24px rgb(24 24 27 / 8%);
+$font-mono: 'Consolas', 'Monaco', 'Courier New', monospace;
+$focus-ring: 0 0 0 3px rgb(252 163 12 / 45%);
+
+$strength-colors: (
+  weak: $color-strength-weak,
+  fair: $color-strength-fair,
+  good: $color-strength-good,
+  strong: $color-strength-strong,
+);
+
+@mixin focus-ring {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
