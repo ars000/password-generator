@@ -18,6 +18,21 @@ npm run build
 npm run preview
 ```
 
+Сборка для GitHub Pages (базовый путь `/password-generator/`):
+
+```bash
+npm run build:pages
+```
+
+## Публикация
+
+Сайт деплоится через GitHub Actions при push в `main`.
+
+- Репозиторий: [github.com/ars000/password-generator](https://github.com/ars000/password-generator)
+- Сайт: [ars000.github.io/password-generator](https://ars000.github.io/password-generator/)
+
+В настройках репозитория (**Settings → Pages → Build and deployment**) источник должен быть **GitHub Actions** (обычно включается после первого успешного workflow).
+
 ## Тесты
 
 ```bash
