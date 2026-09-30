@@ -33,6 +33,14 @@ jobs:
       - name: Build for GitHub Pages
         run: npm run build:pages
 
+      - name: Verify build output
+        run: |
+          test -f dist/index.html
+          test -d dist/assets
+          grep -q "assets/index" dist/index.html
+          ls -la dist
+          ls -la dist/assets
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

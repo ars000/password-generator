@@ -18,7 +18,7 @@ npm run build
 npm run preview
 ```
 
-Сборка для GitHub Pages (базовый путь `/password-generator/`):
+Сборка для GitHub Pages (относительные пути `./` для корректной загрузки JS/CSS):
 
 ```bash
 npm run build:pages
@@ -30,6 +30,14 @@ npm run build:pages
 
 - Репозиторий: [github.com/ars000/password-generator](https://github.com/ars000/password-generator)
 - Сайт: [ars000.github.io/password-generator](https://ars000.github.io/password-generator/)
+
+### Где смотреть workflow (не путать с настройками)
+
+1. В репозитории вкладка **Actions** (верхнее меню рядом с Pull requests), **не** Settings → Actions.
+2. Слева в списке: **Deploy to GitHub Pages** → последний run должен быть зелёным.
+3. **Settings → Pages → Build and deployment → Source** = **GitHub Actions** (не «Deploy from a branch»).
+
+Если страница пустая, в исходном коде страницы (Ctrl+U) не должно быть `/src/main.tsx` — только `./assets/index-….js`. Перезапустите workflow: Actions → Deploy to GitHub Pages → **Run workflow**.
 
 В настройках репозитория (**Settings → Pages → Build and deployment**) источник должен быть **GitHub Actions** (обычно включается после первого успешного workflow).
 
