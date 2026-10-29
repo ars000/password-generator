@@ -12,7 +12,7 @@
 - копирование в буфер обмена с подсказкой об успехе или ошибке;
 - светлая и тёмная тема (сохранение выбора после переключения).
 
-Демо: [ars000.github.io/password-generator](https://ars000.github.io/password-generator/).
+Сайт: [pass.ars000.ru](https://pass.ars000.ru)
 
 ## Запуск
 
@@ -36,12 +36,11 @@ npm run preview
 npm run build:pages
 ```
 
-## Публикация
+## Git и публикация
 
-Сайт деплоится через GitHub Actions при push в `main`.
-
+- Feature-ветки — без деплоя на прод; **push в `main`** → GitHub Actions → [pass.ars000.ru](https://pass.ars000.ru).
 - Репозиторий: [github.com/ars000/password-generator](https://github.com/ars000/password-generator)
-- Сайт: [ars000.github.io/password-generator](https://ars000.github.io/password-generator/)
+- Pages: **Settings → GitHub Actions**
 
 ## Тесты
 
